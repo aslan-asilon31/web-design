@@ -13,7 +13,7 @@ class Header extends Component
 
   public function mount()
   {
-    $this->user = auth()->user()->with(['employee:id,name,position_id', 'employee.position:id,name'])->first();
+    // $this->user = auth()->user()->with(['employee:id,name,position_id', 'employee.position:id,name'])->first();
   }
 
   public function render()
