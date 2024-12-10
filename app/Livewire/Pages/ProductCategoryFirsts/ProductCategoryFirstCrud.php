@@ -1,21 +1,22 @@
 <?php
 
-namespace App\Livewire\Pages\Products;
+namespace App\Livewire\Pages\ProductCategoryFirsts;
 
-use App\Livewire\Pages\Products\Forms\ProductForm;
-use App\Models\Product;
+use App\Livewire\Pages\ProductCategoryFirsts\Forms\ProductCategoryFirstForm;
+use App\Models\ProductCategoryFirst;
 use Livewire\Component;
 
-class ProductCrud extends Component
+class ProductCategoryFirstCrud extends Component
 {
   public function render()
   {
-    return view('livewire.pages.products.product-crud')
+    return view('livewire.pages.product-category-firsts.product-category-first-crud')
       ->title($this->title);
   }
 
-  public string $title = 'Product';
-  public string $url = '/products';
+  public string $title = 'Product Category 1';
+  public string $url = '/product-category-firsts';
+
 
   use \Livewire\WithFileUploads;
   use \App\Helpers\ImageUpload\Traits\WithImageUpload;
@@ -23,12 +24,11 @@ class ProductCrud extends Component
 
   #[\Livewire\Attributes\Locked]
   public null|string $id = null;
-  public $imageOption;
-  private string $model = Product::class;
-  public ProductForm $masterForm;
+  private string $model = ProductCategoryFirst::class;
+  public ProductCategoryFirstForm $masterForm;
 
-  private string $uploadFolderName = 'files/images/products';
-  private string $baseImageName = 'product_image';
+  private string $uploadFolderName = 'files/images/product-category-firsts';
+  private string $baseImageName = 'product_category_first_image';
 
   public function create()
   {

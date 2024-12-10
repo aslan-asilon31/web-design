@@ -2,12 +2,29 @@
 
 use App\Http\Controllers\Api\EmployeeApiController;
 use App\Http\Controllers\Api\SelectApiController;
+use App\Http\Controllers\Api\AddressesApiController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
+
 
 // Route::get('/user', function (Request $request) {
 //     return $request->user();
 // })->middleware('auth:sanctum');
+
+
+// Route::get('/provinces', function () {
+//   $response = Http::get('https://emsifa.github.io/api-wilayah-indonesia/api/provinces.json');
+//   return response()->json($response->json());
+// });
+
+
+Route::get('/provinces', [AddressesApiController::class, 'getProvinces']);
+
+Route::get('/regencies/{provinceId}', [AddressesApiController::class, 'getRegencies']);
+// Route::get('/regencies', [AddressesApiController::class, 'getRegencies']);
+Route::get('/districts/{regencyId}', [AddressesApiController::class, 'getDistricts']);
+Route::get('/villages/{districtId}', [AddressesApiController::class, 'getVillages']);
 
 Route::prefix('v1')->group(function () {
   Route::get('/employees/select', [EmployeeApiController::class, 'select']);

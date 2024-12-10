@@ -9,19 +9,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Title Tag  -->
-  <title>Proquip</title>
+  <title>Proquip v3</title>
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="{{ asset('asset-v3/images/favicon.png') }}">
   <!-- Web Font -->
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
     rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
   <!-- StyleSheet -->
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="{{ asset('asset-v3/css/bootstrap.css') }}">
+  {{-- <link rel="stylesheet" href="{{ asset('asset-v3/css/bootstrap.css') }}"> --}}
   <!-- Magnific Popup -->
   <link rel="stylesheet" href="{{ asset('asset-v3/css/magnific-popup.min.css') }}">
   <!-- Font Awesome -->
@@ -135,7 +136,7 @@
           <div class="col-lg-2 col-md-2 col-12">
             <!-- Logo -->
             <div class="logo">
-              <a href="index.html"><img src="{{ asset('asset-v3/images/logo.png') }}" alt="logo"></a>
+              <a href="index.html"><img src="{{ asset('logo.webp') }}" class="bg-[#dc3545]" alt="logo"></a>
             </div>
             <!--/ End Logo -->
             <!-- Search Form -->
@@ -218,14 +219,14 @@
       </div>
     </div>
     <!-- Header Inner -->
-    <div class="header-inner">
+    <div class="header-inner sticky top-0 z-50 bg-white shadow-md">
       <div class="container">
         <div class="cat-nav-head">
           <div class="row">
             <div class="col-lg-3">
               <div class="all-category">
                 <h3 class="cat-heading"><i class="fa fa-bars" aria-hidden="true"></i>CATEGORIES</h3>
-                <ul class="main-category">
+                <ul class="main-category" hidden>
                   <li><a href="#">New Arrivals <i class="fa fa-angle-right" aria-hidden="true"></i></a>
                     <ul class="sub-category">
                       <li><a href="#">accessories</a></li>
@@ -306,7 +307,7 @@
                             <li><a href="index4.html">Home Ecommerce V4</a></li>
                           </ul>
                         </li>
-                        <li><a href="#">Product</a></li>
+                        <li><a href="#" class="!text-black">Product 1</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
                           <ul class="dropdown">
@@ -2574,7 +2575,8 @@
             <!-- Single Widget -->
             <div class="single-footer about">
               <div class="logo">
-                <a href="index.html"><img src="{{ asset('asset-v3/images/logo2.png') }}" alt="#"></a>
+                <a href="index.html"><img src="{{ asset('logo.webp') }}" class="bg-[#dc3545]"
+                    alt="#"></a>
               </div>
               <p class="text">Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, magna eros eu
                 erat.
@@ -2668,7 +2670,7 @@
   <!-- Popper JS -->
   <script src="{{ asset('asset-v3/js/popper.min.js') }}"></script>
   <!-- Bootstrap JS -->
-  <script src="{{ asset('asset-v3/js/bootstrap.min.js') }}"></script>
+  {{-- <script src="{{ asset('asset-v3/js/bootstrap.min.js') }}"></script> --}}
   <!-- Color JS -->
   <script src="{{ asset('asset-v3/js/colors.js') }}"></script>
   <!-- Slicknav JS -->

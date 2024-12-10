@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Ecommerce">
-  <title>Proquip</title>
+  <title>Proquip v2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ asset('asset-v2/assets/img/favicon.png') }}">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="{{ asset('asset-v2/assets/css/bootstrap.min.css') }}" type="text/css">
+  {{-- <link rel="stylesheet" href="{{ asset('asset-v2/assets/css/bootstrap.min.css') }}" type="text/css"> --}}
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="{{ asset('asset-v2/assets/fonts/font-awesome.min.css') }}" type="text/css">
   <!-- Line Icons CSS -->
@@ -189,13 +190,13 @@
     <nav class="navbar navbar-default" data-spy="affix" data-offset-top="50">
       <div class="container">
         <div class="row">
-          <div class="navbar-header">
+          <div class="navbar-header bg-[#dc3545]">
             <!-- Stat Toggle Nav Link For Mobiles -->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="{{ asset('asset-v2/assets/img/logo.png') }}" alt="">
+            <a class="navbar-brand " href="index.html">
+              <img src="{{ asset('logo.webp') }}" alt="">
             </a>
           </div>
           <div class="navbar-collapse collapse">
@@ -251,7 +252,9 @@
                     </div>
                     <div class="col-sm-5 col-sm-offset-1 col-xs-12">
                       <span class="block-last">
-                        <img src="{{ asset('asset-v2/assets/img/block_menu.jpg') }}" alt="">
+                        <img
+                          src="https://www.proquip.id/files/images/products/9795a5ee616a488d95803b8ff7907869/9795a5ee616a488d95803b8ff7907869-image.webp"
+                          alt="">
                       </span>
                     </div>
                   </div>
@@ -534,14 +537,16 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12">
-          <div class="feature-item-content">
-            <img src="{{ asset('asset-v2/assets/img/feature/img1.jpg') }}" alt="">
-            <div class="feature-content">
-              <div class="banner-text">
-                <h4>Men's Collection</h4>
-                <p>Summer Exclusive</p>
-              </div>
-              <a href="#" class="btn btn-common">Shop Now</a>
+          <div class="grid grid-rows-[auto,1fr] gap-4 feature-item-content">
+            <img class="w-full h-auto object-cover rounded-lg"
+              src="https://www.proquip.id/files/images/products/9795a5ee616a488d95803b8ff7907869/9795a5ee616a488d95803b8ff7907869-image.webp"
+              alt="Product Image">
+
+            <div class="feature-content flex justify-center ">
+              <a href="#"
+                class="btn btn-common bg-[#dc3545] text-white px-6 py-2 rounded-lg hover:bg-[#c13544] transition-all">
+                Shop Now
+              </a>
             </div>
           </div>
         </div>
@@ -1570,7 +1575,7 @@
 
   <!-- All js here -->
   <script type="text/javascript" src="{{ asset('asset-v2/assets/js/jquery-min.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('asset-v2/assets/js/bootstrap.min.js') }}"></script>
+  {{-- <script type="text/javascript" src="{{ asset('asset-v2/assets/js/bootstrap.min.js') }}"></script> --}}
   <script type="text/javascript" src="{{ asset('asset-v2/assets/js/owl.carousel.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('asset-v2/assets/js/classie.js') }}"></script>
   <script type="text/javascript" src="{{ asset('asset-v2/assets/js/slick.min.js') }}"></script>

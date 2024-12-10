@@ -12,10 +12,17 @@ class ProductForm extends Form
   public string|null $availability = 'in-stock';
   public float|null $selling_price = 0;
   public TemporaryUploadedFile|string|null $image_url = null;
+  public TemporaryUploadedFile|string|null $image = null;
   public int|null $is_activated = 1;
 
   public function rules(string|null $id = null): array
   {
+
+    $imageValidationRule = $this->imageOption === 'link'
+      ? ['nullable', 'url'] // For image URL: ensure it's a valid URL
+      : ['nullable', new \App\Rules\StringOrImageRule]; // For uploaded image: custom validation rule
+
+
     return [
       'masterForm.product_category_first_id' => 'required|string',
       'masterForm.availability' => 'required|string',

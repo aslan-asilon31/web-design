@@ -31,6 +31,10 @@
       <x-label for="masterForm.image">Image</x-label>
       <x-image-upload wire:model="masterForm.image" placeholder="Image Url" />
       <x-image-preview :imageUrl="$masterForm?->image" />
+
+      <div x-show="uploading">
+        <progress max="100" x-bind:value="progress"></progress>
+      </div>
     </div>
     <div class="mb-3">
       <x-label for="masterForm.is_activated">Activate</x-label>
