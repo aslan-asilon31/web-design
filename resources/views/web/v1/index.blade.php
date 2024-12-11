@@ -23,11 +23,14 @@
             </span>
           </div>
           <div class="w-full text-gray-700 md:text-center text-2xl font-semibold">
-            <x-input label="" placeholder="search product">
-              <x-slot name="append">
-                <x-button class="h-full" icon="magnifying-glass-circle" rounded="rounded-r-md" primary flat />
-              </x-slot>
-            </x-input>
+            <form method="GET" action="{{ route('v1.product-filter') }}" class="flex items-center">
+              <x-select label="Search a User" placeholder="Select some user" :async-data="url('/api/v1/select/product-category-firsts')" :template="[
+                  'name' => 'user-option',
+              
+                  'config' => ['src' => 'image_url'],
+              ]"
+                option-label="name" option-value="id" option-description="name" />
+            </form>
           </div>
           <div class="flex items-center justify-end w-full">
             <button @click="cartOpen = !cartOpen" class="text-gray-600 focus:outline-none mx-4 sm:mx-0">

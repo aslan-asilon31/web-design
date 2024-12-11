@@ -1,0 +1,6 @@
+              {{-- <x-input label="" placeholder="Search product" name="query" class="flex-grow">
+                <x-slot name="append">
+                  <x-button type="submit" class="h-full" icon="magnifying-glass-circle" rounded="rounded-r-md" primary
+                    flat />
+                </x-slot>
+              </x-input> --}}
