@@ -2,6 +2,7 @@
   <mj-head>
     <mj-preview>UMEDA Holiday Sale - 70% off!</mj-preview>
     <mj-font name="Roboto" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <mj-style>
       .button {
       background-color: #f5b963;
@@ -11,6 +12,88 @@
       border-radius: 5px;
       font-weight: bold;
       }
+
+
+      .gradient-background-bru {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      url("https://private-user-images.githubusercontent.com/116990574/395087005-d1e2ce4c-b8e5-4210-8a0d-6ee136f96be4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5OTQ5NDEsIm5iZiI6MTczMzk5NDY0MSwicGF0aCI6Ii8xMTY5OTA1NzQvMzk1MDg3MDA1LWQxZTJjZTRjLWI4ZTUtNDIxMC04YTBkLTZlZTEzNmY5NmJlNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIxMlQwOTEwNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00M2YzZDhhZjZmOGNkNGYyZGYwYTBiZmM4OTUyYWUxMDEwMDMzMTFiOGJhNDY4ZjM3ODg0YzczYzE2YjU4MTU2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.AnVKfW6U8QcEjlEDn_Rgzfibo6BacmzHLRdqDCF_ZAw");
+
+      background-size: cover;
+      }
+
+
+
+      .gradient-background-omuni {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)),
+      url("https://private-user-images.githubusercontent.com/116990574/395086007-4d7082ee-afb6-4a8b-974a-d4ab846d0cb7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5OTQ3NTgsIm5iZiI6MTczMzk5NDQ1OCwicGF0aCI6Ii8xMTY5OTA1NzQvMzk1MDg2MDA3LTRkNzA4MmVlLWFmYjYtNGE4Yi05NzRhLWQ0YWI4NDZkMGNiNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIxMlQwOTA3MzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03YTliYzI5MzIwZTk5NWMzZDQxMzkwOTdmOTkxODZmZTYwZWFiNGE1ODY0MDhmMzIxZTM3YmFlY2M5ZTdmNGEwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ta8vecLMYCM9HC3g8JKCmhPt3dzAJGbgTRh_Z9iKj7M");
+
+      background-size: cover;
+      }
+
+
+      .gradient-background-bru1 {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99 ;
+      }
+      
+      
+       .flex-container {
+        display: flex !important;
+        justify-content: space-between;
+      }
+
+      .mj-column {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .gradient-text-dark {
+        font-size: 24px;
+        font-weight: bold; /* Membuat teks menjadi tebal */
+        text-shadow: 
+          2px 2px 4px rgba(255, 255, 255, 0.7), /* Outline putih */
+          -2px -2px 4px rgba(255, 255, 255, 0.7), 
+          2px -2px 4px rgba(255, 255, 255, 0.7), 
+          -2px 2px 4px rgba(255, 255, 255, 0.7); /* Outline putih */
+      }
+      
+            
+      .gradient-text-white {
+        font-size: 12px;
+        font-weight: bold; /* Membuat teks menjadi tebal */
+        text-shadow: 
+          2px 2px 4px rgba(0, 0, 0, 0.7), /* Outline gelap (hitam) */
+          -2px -2px 4px rgba(0, 0, 0, 0.7), 
+          2px -2px 4px rgba(0, 0, 0, 0.7), 
+          -2px 2px 4px rgba(0, 0, 0, 0.7); /* Outline gelap (hitam) */
+      }
+      
+                  
+      .gradient-text-white-no-outline {
+        font-size: 12px;
+        font-weight: bold; /* Membuat teks menjadi tebal */
+
+      }
+      
+                        
+      .title-white-no-outline {
+        font-size: 32px;
+        font-weight: bold; /* Membuat teks menjadi tebal */
+
+      }
+
+
     </mj-style>
   </mj-head>
   <mj-body background-color="#f4f4f4" font-family="Roboto, Arial, sans-serif">
@@ -18,110 +101,99 @@
     <mj-section background-color="#fff" padding="20px">
       <mj-column>
         <mj-image src="https://umedalife.jp/assets/images/umeda-logo.png" alt="UMEDA Logo" width="120px" />
-        <mj-image src="https://umedalife.jp/files/images/sliders/bru/umeda-bru-slider-01.webp" alt="UMEDA Logo"
-          width="500" />
+        <mj-image src="https://umedalife.jp/files/images/sliders/bru/umeda-bru-slider-01.webp" alt="UMEDA Logo" width="500" />
 
 
       </mj-column>
     </mj-section>
 
     <!-- Product 1 Section -->
-    <mj-section background-url="https://umedalife.jp/files/images/sliders/bru/umeda-bru-slider-01.webp"
-      background-size="cover" padding="20px" css-class="gradient-background">
+    <mj-section padding="20px" css-class="gradient-background-bru" >
       <mj-column>
-        <mj-text font-size="18px" font-weight="bold" color="#333333" align="center">Bru</mj-text>
-        <mj-text font-size="16px" color="#666666" align="center">Coffee Machine</mj-text>
-        <mj-image
-          src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/features/umeda-bru-feature-image-987cfa3ab1324d9a83c0cd4d8e7bc0be.webp"
-          alt="Bru Coffee Machine" width="500" />
-        <mj-section background-color="#fbfbfb">
-          <mj-column>
-            <mj-image width="200px"
-              src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/displays/umeda-bru-display-image-987cf0f10daf48f9acdcfeb52e7ce032.webp"></mj-image>
-          </mj-column>
-          <mj-column>
-            <mj-image width="200px"
-              src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/displays/umeda-bru-display-image-987cf0f841a84ca2a80d45ff014fddd5.webp"></mj-image>
-          </mj-column>
-          <mj-column>
-            <mj-image width="200px"
-              src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/displays/umeda-bru-display-image-987cf14fb525495a8da7098fbd0190e4.webp"></mj-image>
-          </mj-column>
-
-        </mj-section>
-        <mj-text font-size="16px" color="#666666" align="center">Bru, Barista pribadi yang menghangatkan suasana rumahmu
+  
+        <mj-text font-size="18px" font-weight="bold" color="#96694C" align="center">
+          &#8226; Bru &#8226; <br>
+          <span style="font-size: 12px; color: #96694C;">Coffee Machine</span>
         </mj-text>
+        <mj-image src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/features/umeda-bru-feature-image-987cfa3ab1324d9a83c0cd4d8e7bc0be.webp" alt="Bru Coffee Machine" width="500" css-class="gradient-background-bru1" />
+                <mj-image src="https://private-user-images.githubusercontent.com/116990574/395083772-7452e087-9ecb-402f-89a0-5b0e9dfaea02.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5OTQ0MjAsIm5iZiI6MTczMzk5NDEyMCwicGF0aCI6Ii8xMTY5OTA1NzQvMzk1MDgzNzcyLTc0NTJlMDg3LTllY2ItNDAyZi04OWEwLTViMGU5ZGZhZWEwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIxMlQwOTAyMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYjJkNDlmOWIzNzg5NjM1YWYyNDBkMGVmNzBkMjViNzU1NDYxYjE1ZTdlZTA3OTY5YjIwMmUwMjllNjM0MjM2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._kk4l2t5F_5YeKj1FbqnzNrpBYZlNUTSfcaGVfgTQkQ" alt="Bru Coffee Machine" width="500" css-class="gradient-background-bru1" />
+ 
 
-        <mj-button href="#" align="center" background-color="#f5b963" color="#ffffff" border-radius="5px">
-          Buat Kopi
-        </mj-button>
+        <mj-text font-size="12px" color="#96694C" css-class="gradient-text-dark" align="center">Bru, Barista pribadi yang menghangatkan suasana rumahmu </mj-text>
+
+<mj-button href="#" align="center" background-color="#ffffff" color="#96694C" border-radius="10px" font-size="16px" padding="10px 20px" 
+  style="box-shadow: 4px 4px 16px rgba(150, 105, 76, 0.6); border: none; text-shadow: 1px 1px 2px rgba(150, 105, 76, 0.8); transform: rotate(5deg); transition: transform 0.3s ease;">
+  Buat Kopi
+</mj-button>
+
+
       </mj-column>
     </mj-section>
-
 
 
     <!-- Product 2 Section -->
     <mj-section background-color="#96694C" padding="20px">
       <mj-column>
-        <mj-text font-size="18px" font-weight="bold" color="#fff" align="center">U Stik Lite</mj-text>
-        <mj-text font-size="16px" color="#fff" align="center">Stick Vacuum Cleaner</mj-text>
-        <mj-image src="https://umedalife.jp/files/images/sliders/bru/umeda-bru-slider-01.webp"
-          alt="U Stik Lite Vacuum Cleaner" width="500" />
+          <mj-text font-size="18px" font-weight="bold" color="#fff" align="center">
+          &#8226; U Stik Lite &#8226; <br>
+          <span style="font-size: 12px; color: #fff;">Stick Vacuum Cleaner</span>
+        </mj-text>
+        
+        <mj-image src="https://umedalife.jp/files/images/sliders/bru/umeda-bru-slider-01.webp" alt="U Stik Lite Vacuum Cleaner" />
+                        <mj-image src="https://private-user-images.githubusercontent.com/116990574/395083772-7452e087-9ecb-402f-89a0-5b0e9dfaea02.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5OTQ0MjAsIm5iZiI6MTczMzk5NDEyMCwicGF0aCI6Ii8xMTY5OTA1NzQvMzk1MDgzNzcyLTc0NTJlMDg3LTllY2ItNDAyZi04OWEwLTViMGU5ZGZhZWEwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIxMlQwOTAyMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYjJkNDlmOWIzNzg5NjM1YWYyNDBkMGVmNzBkMjViNzU1NDYxYjE1ZTdlZTA3OTY5YjIwMmUwMjllNjM0MjM2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._kk4l2t5F_5YeKj1FbqnzNrpBYZlNUTSfcaGVfgTQkQ" alt="Bru Coffee Machine" width="500" css-class="gradient-background-bru1" />
 
-        <mj-section background-color="#fbfbfb">
-          <mj-column>
-            <mj-image width="150px"
-              src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/displays/umeda-bru-display-image-987cf0f10daf48f9acdcfeb52e7ce032.webp"></mj-image>
-          </mj-column>
-          <mj-column>
-            <mj-image width="150px"
-              src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/displays/umeda-bru-display-image-987cf0f841a84ca2a80d45ff014fddd5.webp"></mj-image>
-          </mj-column>
-          <mj-column>
-            <mj-image width="150px"
-              src="https://umedalife.jp/files/products/9874b806f02340e3a17d2892944d8d03/displays/umeda-bru-display-image-987cf14fb525495a8da7098fbd0190e4.webp"></mj-image>
-          </mj-column>
+        <mj-text font-size="12px" color="#fff" css-class="gradient-text-white-no-outline" align="center">Awali tahun baru dengan sudut rumah dan pikiran yang bersih dan jernih, hanya dengan U Stick Lite </mj-text>
 
-          <mj-text font-size="14px" color="#666666" align="center">
-            Awali tahun baru dengan sudut rumah dan pikiran yang bersih, hanya dengan U Stik Lite.
-          </mj-text>
-
-        </mj-section>
         <mj-button href="#" align="center" background-color="#f5b963" color="#ffffff" border-radius="5px">
-          Makan Lebih Sehat
+          Bersihkan Rumah
         </mj-button>
       </mj-column>
     </mj-section>
 
 
-    <mj-button href="#" align="center" background-color="#f5b963" color="#ffffff" border-radius="5px">
-      Bersihkan Rumah
-    </mj-button>
+
+    <!-- Product 3 Section -->
+    <mj-section padding="20px" css-class="gradient-background-omuni">
+      <mj-column>
+        
+                <mj-text font-size="18px" font-weight="bold" color="#96694C" align="center">
+          &#8226; Omuni &#8226; <br>
+          <span style="font-size: 12px; color: #96694C;">Steam Air Frayer Oven</span>
+        </mj-text>
+     
+        <mj-image src="https://umedalife.jp/files/products/9d4bb3142219466591ea01254eb30f44/features/omuni-feature-image-9d4bb9224b214425968ca1ec91967931.webp" alt="U Stik Lite Vacuum Cleaner" />
+        
+                        <mj-image src="https://private-user-images.githubusercontent.com/116990574/395083772-7452e087-9ecb-402f-89a0-5b0e9dfaea02.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzM5OTQ0MjAsIm5iZiI6MTczMzk5NDEyMCwicGF0aCI6Ii8xMTY5OTA1NzQvMzk1MDgzNzcyLTc0NTJlMDg3LTllY2ItNDAyZi04OWEwLTViMGU5ZGZhZWEwMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMjEyJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTIxMlQwOTAyMDBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYjJkNDlmOWIzNzg5NjM1YWYyNDBkMGVmNzBkMjViNzU1NDYxYjE1ZTdlZTA3OTY5YjIwMmUwMjllNjM0MjM2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9._kk4l2t5F_5YeKj1FbqnzNrpBYZlNUTSfcaGVfgTQkQ" alt="Bru Coffee Machine" width="500" css-class="gradient-background-bru1" />
+        
+
+                 
+          <mj-text font-size="12px" color="#96694C" css-class="gradient-text-dark" align="center"  >
+            Pastikan tahun baru mu lebih bergizi dan sehat dengan omuni steam oven & air fryer.
+          </mj-text>
+        
+        <mj-button href="#" align="center" background-color="#C0C0C0" color="#000" border-radius="5px">
+          Makan Lebih Sehat
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
     </mj-column>
     </mj-section>
 
-    <!-- Product 3 Section -->
-    <mj-section background-color="#ffffff" padding="20px">
+
+
+
+    <!-- Footer Section -->
+    <mj-section background-color="#96694C" padding="20px">
       <mj-column>
-        <mj-text font-size="18px" font-weight="bold" color="#333333" align="center">Omuni</mj-text>
-        <mj-text font-size="16px" color="#666666" align="center">Steam Air Fryer Oven</mj-text>
-        <mj-image src="PLACEHOLDER_FOR_PRODUCT_3_IMAGE" alt="Omuni Steam Air Fryer Oven" width="200px" />
-        <mj-text font-size="14px" color="#666666" align="center">
-          Pastikan tahun barumu lebih bergizi dan sehat dengan Omuni steam oven & air fryer.
-        </mj-text>
-
-
-        <!-- Footer Section -->
-        <mj-section background-color="#f4f4f4" padding="20px">
-          <mj-column>
-            <mj-text font-size="14px" color="#666666" align="center">Follow media sosial kami</mj-text>
-            <mj-social mode="horizontal" align="center">
-              <mj-social-element name="instagram" href="#" />
-              <mj-social-element name="tiktok" href="#" />
-              <mj-social-element name="facebook" href="#" />
-            </mj-social>
-          </mj-column>
-        </mj-section>
+        <mj-text font-size="14px" color="#96694C" align="center">Follow media sosial kami</mj-text>
+        <mj-social mode="horizontal" align="center">
+          <mj-social-element name="instagram" href="#" color="#96694C" />
+          <mj-social-element name="tiktok" href="#" color="#96694C" />
+          <mj-social-element name="youtube" href="#" color="#96694C" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
 
 
   </mj-body>
