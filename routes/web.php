@@ -7,9 +7,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('v1/', function () {
   return view('web/v1/index');
 });
+
+Route::get('email/', function () {
+  return view('email-send');
+});
 Route::get('/product-filter', \App\Livewire\ProductFilterIndex::class)->name('v1.product-filter');
 Route::get('/product-detail', \App\Livewire\ProductDetailIndex::class)->name('v1.product-detail');
 
+Route::get('/product-cart1', \App\Livewire\ProductCart1::class)->name('v1.product-cart1');
 
 
 Route::get('v2/', function () {

@@ -18,6 +18,8 @@ return new class extends Migration
       $table->integer('quantity')->default(1);
       $table->decimal('price', 10, 2);
       $table->decimal('delivery_charge', 10, 2)->default(0);
+      $table->string('created_by')->nullable();
+      $table->string('updated_by')->nullable();
       $table->timestamps();
     });
   }

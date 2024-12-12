@@ -3,11 +3,15 @@
 namespace App\Livewire\Pages\Cart;
 
 use Livewire\Component;
+use App\Models\Cart;
+use App\Models\Product;
 
 class CartIndex extends Component
 {
   public $title;
   public $content;
+
+  protected $listeners = ['addToCart'];
 
   public $cart = [
     1 => [
@@ -24,22 +28,26 @@ class CartIndex extends Component
     ]
   ];
 
-
   public function addToCart($productId)
   {
-    if (isset($this->cart[$productId])) {
-      $this->cart[$productId]['quantity']++;
-      $operation = 'added';
-    } else {
-      $this->cart[$productId] = [
-        'name' => 'Product ' . $productId,
-        'quantity' => 1,
-        'price' => 100,
-      ];
-      $operation = 'added';
-    }
+    $product = Product::find($productId);
+    if ($product) {
+      if (isset($this->cart[$productId])) {
+        $this->cart[$productId]['quantity']++;
+        $operation = 'added';
+      } else {
+        $this->cart[$productId] = [
+          'name' => $product->name,
+          'quantity' => 1,
+          'price' => $product->price,
+          'delivery_charge' => $product->delivery_charge,
+        ];
+        $operation = 'added';
+      }
 
-    $this->dispatch('cartUpdated', ['cart' => $this->cart, 'operation' => $operation]);
+      $this->dispatch('cartUpdated', ['cart' => $this->cart, 'operation' => $operation]);
+    } else {
+    }
   }
 
   public function removeFromCart($productId)

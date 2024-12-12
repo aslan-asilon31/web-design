@@ -8,6 +8,8 @@ use Livewire\Component;
 class Dashboard extends Component
 {
   public $tes;
+  public $count;
+
   public function cek()
   {
     $this->tes = "cekkk";
