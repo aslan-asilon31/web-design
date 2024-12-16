@@ -7,6 +7,48 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>v1</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Container for the banner */
+    .banner-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background-color: #f3f4f6;
+    }
+
+    /* The actual content of the banner that will scroll */
+    .banner-content {
+      display: flex;
+      white-space: nowrap;
+      animation: scroll-banner 15s linear infinite;
+    }
+
+    /* Style for each item in the banner */
+    .banner-item {
+      padding: 20px;
+      margin-right: 50px;
+      background-color: #3498db;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    /* Animation for scrolling */
+    @keyframes scroll-banner {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+
+
+
 </head>
 
 <body>
@@ -24,7 +66,7 @@
           </div>
           <div class="w-full text-gray-700 md:text-center text-2xl font-semibold">
             <form method="GET" action="{{ route('v1.product-filter') }}" class="flex items-center">
-              <x-select label="Search a User" placeholder="Select some user" :async-data="url('/api/v1/select/product-category-firsts')" :template="[
+              <x-select label="" placeholder="Select some user" :async-data="url('/api/v1/select/product-category-firsts')" :template="[
                   'name' => 'user-option',
               
                   'config' => ['src' => 'image_url'],
@@ -69,7 +111,7 @@
         </div>
       </div>
     </header>
-    <div :class="cartOpen ? 'translate-x-0 ease-out' : 'translate-x-full ease-in'"
+    {{-- <div :class="cartOpen ? 'translate-x-0 ease-out' : 'translate-x-full ease-in'"
       class="fixed right-0 top-0 max-w-xs w-full h-full px-6 py-4 transition duration-300 transform overflow-y-auto bg-white border-l-2 border-gray-300">
       <div class="flex items-center justify-between">
         <h3 class="text-2xl font-medium text-gray-700">Your cart</h3>
@@ -176,11 +218,11 @@
           <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
         </svg>
       </a>
-    </div>
+    </div> --}}
     <main class="my-8">
       <div class="container mx-auto px-6">
         <div class="h-64 rounded-md overflow-hidden bg-cover bg-center"
-          style="background-image: url('https://images.unsplash.com/photo-1577655197620-704858b270ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1280&q=144')">
+          style="background-image: url('https://www.proquip.id/files/images/homes/home-catalogue-1.webp')">
           <div class="bg-gray-900 bg-opacity-50 flex items-center h-full">
             <div class="px-10 max-w-xl">
               <h2 class="text-2xl text-white font-semibold">Sport Shoes</h2>
@@ -189,8 +231,8 @@
               <button
                 class="flex items-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
                 <span>Shop Now</span>
-                <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round"
-                  stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="h-5 w-5 mx-2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  viewBox="0 0 24 24" stroke="currentColor">
                   <path d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
               </button>
@@ -232,6 +274,18 @@
                   </svg>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16">
+          <div class="banner-container">
+            <div class="banner-content">
+              <div class="banner-item">Category 1</div>
+              <div class="banner-item">Category 2</div>
+              <div class="banner-item">Category 3</div>
+              <div class="banner-item">Category 4</div>
+              <div class="banner-item">Category 5</div>
+              <div class="banner-item">Category 6</div>
             </div>
           </div>
         </div>

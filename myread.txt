@@ -1,6 +1,45 @@
+
+
+
+
+==========================================================================
+AIR COMPRESSOR (done)
+BACKPACK SPRAYER (done)
+BRUSH CUTTER 
+CHAINSAW (done)
+DIGITAL SCALE
+DRILL
+ENGINE
+FLOOR SAW
+GENERATOR
+LAWN MOWER
+LITHIUM
+MINI OUTBOARD
+MINI TILLER
+PLATE COMPACTER
+POWER SPRAYER
+PRESSURE WASHER
+RICE POLISHER
+SEED PLANTER
+TAMPING RAMMER
+THERMAL FOGGER MACHINE
+VACUUM CLEANER
+VACUUM COMPRESSOR
+WATER PUMP
+WELDING GENERATOR
+WELDING INVERTER
+WELDING MACHINE
+
+        
+        
+        
+        =========================================
+        
               {{-- <x-input label="" placeholder="Search product" name="query" class="flex-grow">
                 <x-slot name="append">
                   <x-button type="submit" class="h-full" icon="magnifying-glass-circle" rounded="rounded-r-md" primary
                     flat />
                 </x-slot>
               </x-input> --}}
+
+              ================

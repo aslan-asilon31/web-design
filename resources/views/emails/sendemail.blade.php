@@ -252,7 +252,9 @@
                       <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                         <div
                           style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:1;text-align:center;color:#96694C;">
-                          &#8226; Bru &#8226;<br><span style="font-size: 12px; color: #96694C;">Coffee Machine</span>
+                          &#8226; Bru {{ $data['name'] }} &#8226;<br><span
+                            style="font-size: 12px; color: #96694C;">Coffee Machine
+                          </span>
                         </div>
                       </td>
                     </tr>

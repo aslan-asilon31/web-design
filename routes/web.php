@@ -1,14 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 
+Route::get('/send-email', [MailController::class, 'index'])->name('mail-send');
 
 
 Route::get('v1/', function () {
   return view('web/v1/index');
 });
 
-Route::get('email/', function () {
+Route::get('email-display/', function () {
   return view('email-send');
 });
 Route::get('/product-filter', \App\Livewire\ProductFilterIndex::class)->name('v1.product-filter');
@@ -22,14 +24,14 @@ Route::get('v2/', function () {
 });
 
 
-
 Route::get('v3/', function () {
   return view('web/v3/index');
 });
 
 
 
-Route::get('/', \App\Livewire\Pages\Authentications\Login::class)->name('login');
+// Route::get('/', \App\Livewire\Pages\Authentications\Login::class)->name('login');
+Route::get('/', \App\Livewire\Pages\ProquipHome\ProquipHomeIndex::class)->name('proquip.home');
 
 
 // ===========================================================================================

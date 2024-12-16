@@ -7,6 +7,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use App\Models\Cart;
 use App\Models\Product;
+use App\Models\ProductCategoryFirst;
 use Auth;
 
 

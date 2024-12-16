@@ -12,10 +12,7 @@
   <link rel="icon" href="favicon.ico">
   <link href="/themes/default/css/style.css" rel="stylesheet">
 
-
-
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 
   @wireUiScripts
   @filepondScripts
